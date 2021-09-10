@@ -46,15 +46,14 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } fro
 
         <!-- category -->
         <div class="form-group">
-          <label for="category">Category</label>
-          <input
-            type="text"
-            id="category"
-            name="category"
-            [ngModel]="course.category"
-          />
+          <label for="category">Select a Category</label>
+          <select name="category" id="category" [ngModel]="course.category">
+            <option value="default">Select a category</option>
+            <option value="BEGINNER">Beginner</option>
+            <option value="INTERMEDIATE">Intermediate</option>
+            <option value="ADVANCED">Advanced</option>
+          </select>
         </div>
-
         <div>
           <button type="submit">Save</button>
         </div>
@@ -63,9 +62,6 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } fro
   `,
   styles: [
     `
-      .hide {
-        display: none;
-      }
       .course-form-title {
         width: 32ch;
         background-color: #efefef;

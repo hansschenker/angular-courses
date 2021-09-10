@@ -11,6 +11,6 @@ export const emptyCourse: Course = {
     title: "new Title",
     description: "new Description",
     imageUrl: "../../../../assets/images/ruebli-beet.png",
-    category: "new Category",
+    category: "default",
 
 }

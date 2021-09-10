@@ -12,6 +12,7 @@ import { Course, emptyCourse } from './types/course.type';
   <div class="course-page flex-row flex-content-center  bordered">
     <course-list
     [courses]="courses"
+    (focus)="handleFocus()"
     (onCourseSelected)="handleCourseSelected($event)"
     >
 
@@ -60,5 +61,8 @@ export class CoursesPage implements OnInit {
   }
   handleCourseSelected(course: Course) {
     this.selectedCourse = course;
+  }
+  handleFocus() {
+    window.alert("focus")
   }
 }
