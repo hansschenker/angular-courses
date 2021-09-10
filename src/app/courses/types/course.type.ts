@@ -10,7 +10,7 @@ export const emptyCourse: Course = {
     id: 0,
     title: "new Title",
     description: "new Description",
-    imageUrl: "new Image Url",
+    imageUrl: "../../../../assets/images/ruebli-beet.png",
     category: "new Category",
 
 }

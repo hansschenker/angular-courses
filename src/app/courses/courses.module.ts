@@ -9,6 +9,8 @@ import { CourseFilterPipe } from './components/course-filter.pipe';
 import { CourseAddComponent } from './components/course-add/course-add.component';
 import { CourseFormComponent } from './components/course-form/course-form.component';
 import { CourseItemComponent } from './components/course-item/course-item.component';
+import { CourseCardsComponent } from './course-cards.component';
+import { CourseCardComponent } from './components/course-card/course-card.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { CourseItemComponent } from './components/course-item/course-item.compon
     CourseFilterPipe,
     CourseAddComponent,
     CourseFormComponent,
-    CourseItemComponent
+    CourseItemComponent,
+    CourseCardsComponent,
+    CourseCardComponent
   ],
   imports: [
     CommonModule,

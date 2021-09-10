@@ -9,7 +9,7 @@ import { Course, emptyCourse } from './types/course.type';
 @Component({
   selector: 'hs-courses',
   template: `
-  <div class="course-container">
+  <div class="course-page flex-row flex-content-center  bordered">
     <course-list
     [courses]="courses"
     (onCourseSelected)="handleCourseSelected($event)"
@@ -17,22 +17,24 @@ import { Course, emptyCourse } from './types/course.type';
 
     </course-list>
     <course-form [course] = "selectedCourse"></course-form>
-    <div class="selected-course">
+    <!-- <div class="selected-course">
       <h3>
         Selected Course
       </h3>
       <pre>
         {{ selectedCourse | json }}
       </pre>
-    </div>
+    </div> -->
+
+    <!-- <course-card></course-card> -->
   </div>
 
   `,
   styles: [
     `
-    .course-container {
-      display: flex;
-      flex-wrap: wrap;
+    .course-page {
+
+      border: 1px solid blue;
     }
     .selected-course {
       width: 150px;
@@ -40,7 +42,7 @@ import { Course, emptyCourse } from './types/course.type';
     }
     .flex-item {
       /* flex: 0 0 250px; */
-      flex: 1 1 auto;
+      flex: 1 1 30%;
     }
     `
   ]
